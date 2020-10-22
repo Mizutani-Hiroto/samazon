@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('products','OriductController');
+Route::resource('products','ProductController');
 
 Auth::routes(['verify' => true]);
 
