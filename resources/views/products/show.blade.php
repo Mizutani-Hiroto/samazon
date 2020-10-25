@@ -74,11 +74,12 @@
                 <div class="offset-md-5 col-md-5">
                     <form method="POST" action="/products/{{ $product->id }}/reviews">
                         {{csrf_field()}}
-                        <textarea name=~"content" class="form-control m-2"></textarea>
+                        <textarea name="content" class="form-control m-2"></textarea>
                         <button type="submit" class="btn samazon-submit-button ml-2">レビューを追加</button>
                     </form>
                 </div>
             </div>
+            @endauth
         </div>
     </div>
 </div>
