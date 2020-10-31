@@ -6,8 +6,8 @@
     <div class="col-2">
         @component('components.sidebar',['categories' => $categories, 'major_category_names' => $major_category_names])
         @endcomponent
-    </div　class="container">
-    <div class="col-9">
+    </div>
+      <div class="col-9">
         <div class="container">
             @if ($category !== null)
             <a href="/">トップ</a> > <a href="#">{{ $category->major_category_name }}</a> > {{ $category->name }}
@@ -18,11 +18,13 @@
                 並び替え
                 <select name="sort" onChange="this.form.submit();" class="form-inline ml-2">
                     @foreach ($sort as $key => $value)
-                    @if ($sorted == $value)
-                    <option value="{{ $value }} selected">{{ $key }}</option>
-                    @else
-                    <option value=" {{ $value }}">{{ $key }}</option>
-                    @endif
+                    
+                       @if ($sorted == $value)
+                         <option value="{{ $value }} selected">{{ $key }}</option>
+                        @else
+                        <option value=" {{ $value }}">{{ $key }}</option>
+                        @endif
+                        
                     @endforeach
                 </select>
             </form>
