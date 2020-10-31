@@ -17,7 +17,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $sort_query = [];
-        $sored = "";
+        $sorted = "";
         
         if ($request->sort !== null) {
             $slices = explode('',$request->sort);
