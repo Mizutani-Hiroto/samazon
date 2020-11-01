@@ -44,7 +44,11 @@
   line-height: normal;
   letter-spacing: normal;
   color: #191919;
-  
+}
+
+.user-edit-label {
+  cursor: pointer;
+  cursor: hand;
 }
 
 @font-face {
