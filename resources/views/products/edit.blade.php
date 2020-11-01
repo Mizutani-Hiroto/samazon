@@ -8,8 +8,8 @@
         {{ csrf_field() }}
         <input type="hidden" name="_method" value="PUT">
         <div class="form-group">
-            <label for="product-name">商品名</label>
-            <input type="text" name="name" id="product-name" class="form-control" value="{{ $product->name }}">
+              <label for="product-name">商品名</label>
+              <input type="text" name="name" id="product-name" class="form-control" value="{{ $product->name }}">
         </div>
         <div class="form-group">
             <label for="product-description">商品説明</label>
