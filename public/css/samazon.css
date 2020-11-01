@@ -51,6 +51,11 @@
   cursor: hand;
 }
 
+.samazon-favorite.add-cart {
+  border-radius: 2px;
+  background-color: #0fbe9f;
+}
+
 @font-face {
   font-family: YuGo;
   src: local(YuGo-Medium),
