@@ -7,8 +7,8 @@
     <form method="POST" action="/products">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="product-name">商品名</label>
-            <input type="text" name="name" id="product-name" class="form-control">
+          <label for="product-name">商品名</label>
+          <input type="text" name="name" id="product-name" class="form-control">
         </div>
         <div class="form-group">
             <label for="product-description">商品説明</label>
